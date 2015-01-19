@@ -7,8 +7,8 @@ You need to copy *.fish files into your ~/.config/fish/functions/
 
 ```
 mkdir -p ~/.config/fish/functions/
-cd ~/.config/fish/functions/
-git clone https://github.com/tabdulradi/docker-fish-functions.git
+curl -sSL https://github.com/tabdulradi/docker-fish-functions/archive/master.zip | tar -xf- -C /tmp
+mv /tmp/docker-fish-functions-master/*.fish ~/.config/fish/functions/
 ```
 
 ##Available Commands
